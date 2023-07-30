@@ -14,8 +14,8 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: var(--primary-text-color);
+      text-underline-offset: 2px;
+      font-family: "Courier New", monospace;
     }
 
     body {
@@ -26,7 +26,6 @@
     }
   </style>
   {% seo %}
-  <link rel="stylesheet" href="{{ " /assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   {% include head-custom.html %}
 </head>
 
