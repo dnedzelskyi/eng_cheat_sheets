@@ -13,3 +13,4 @@
 
 - Array
 - Stack
+- [Big-O](./data_structures/big_o.md)
