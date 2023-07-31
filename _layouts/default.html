@@ -5,8 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/go.min.js"></script>
   {% seo %}
-  <link rel="stylesheet" href="./style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      text-underline-offset: 2px;
+      font-family: 'Courier New', monospace;
+    }
+
+    body {
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 350px;
+      width: 61.8%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px 0px;
+    }
+
+    tr {
+      border-bottom: 1px solid;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  </style>
 </head>
 
 <body>
