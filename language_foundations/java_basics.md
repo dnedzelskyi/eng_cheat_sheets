@@ -16,7 +16,6 @@
 ## Variables.
 
 ```java
-
 // Local variable
 int bufferSize = 74;
 
@@ -37,4 +36,66 @@ public class Scheduler {
 
   static boolean isRunning;
 }
+```
+
+## Decision-making statements.
+
+```java
+// if-then
+if (isLoaded || length > 0) {
+  ...
+}
+
+// if-then-else
+if (score < 40) {
+    ...
+} else if (65 < score && score < 70) {
+    ...
+} else {
+    ...
+}
+
+// Switch
+switch (grade) {
+    case 'A':
+        ...
+        break;
+    case 'B', 'C':
+        ...
+        break;
+    ...
+    default:
+        ...
+        break;
+}
+
+// Switch expressions
+String message = switch (grade) {
+    case 'A', 'B' -> "Amazing";
+    case 'C' -> "Good";
+    default -> {
+        System.out.println("Oh NO !!!");
+        yield "Bad";
+    }
+};
+
+```
+
+## Loop statements.
+
+```java
+// for loop
+for (int i = 0; i < arr.length; i++) {
+  ...
+}
+
+// while loop
+while (i < arr.length) {
+  ...
+}
+
+// do-while loop
+do {
+  ...
+} while (keepRunning);
 ```
