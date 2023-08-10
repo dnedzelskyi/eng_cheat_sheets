@@ -2,12 +2,13 @@
 
 **Language foundations:**
 
+- Java
+  - [Basics](./language_foundations/java_basics.md)
 - JavaScript
   - [Basics](./language_foundations/js_basics.md)
   - Arrays
-- TypeScript
 - Python
-- Java
+- TypeScript
 
 **Data Structures**:
 

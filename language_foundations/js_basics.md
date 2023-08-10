@@ -2,7 +2,7 @@
 
 # JavaScript | Basics
 
-## Basic Types.
+## Primitive Types.
 
 1. **`number`** for numbers of any kind: integer or floating-point, integers are limited by ±(2^53-1).
 1. **`bigint`** for integer numbers of arbitrary length.
