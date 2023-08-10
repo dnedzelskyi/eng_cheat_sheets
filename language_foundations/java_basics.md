@@ -14,13 +14,14 @@
 1. **`boolean`** boolean value, which can be either true or false.
 
 ## Variables.
+
 ```java
 
 // Local variable
 int bufferSize = 74;
 
 // Local constant
-final String APP_NAME = 'Engineering Cheat Sheets';
+final String APP_NAME = "Engineering Cheat Sheets";
 
 // Instance constant, variable.
 public class User {
@@ -30,7 +31,7 @@ public class User {
   int age;
 }
 
-// Class constant and variable. 
+// Class constant and variable.
 public class Scheduler {
   private static final EXECUTION_INTERVAL = 500;
 
