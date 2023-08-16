@@ -5,9 +5,9 @@
 ## Basics
 
 ```java
-// Crete array of 10 int elements.
-// numbers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-int[] numbers = new int[10];
+// Crete array of 8 int elements.
+// numbers = [0, 0, 0, 0, 0, 0, 0, 0]
+int[] numbers = new int[8];
 
 // Create array of 5 Strings.
 // labels = [null, null, null, null, null]
@@ -15,12 +15,12 @@ var labels = new String[5];
 
 // Create and initialize at once.
 // flags = [true, true, false]
-// letters = [A, B, C, D]
+// letters = [A, B, C]
 boolean[] flags = {true, true, false};
-var letters = new char[]{'A', 'B', 'C', 'D'};
+var letters = new char[]{'A', 'B', 'C'};
 
 // Assign value.
-// [0, 5, 0, 0, 7, 0, 0, 0, 0, 0]
+// [0, 5, 0, 0, 7, 0, 0, 0]
 numbers[4] = 7;
 numbers[1] = 5;
 
@@ -39,7 +39,7 @@ for (int i = 0; i < labels.length; i++) {
 }
 
 // Iterate by values
-// word = "ABCD"
+// word = "ABC"
 StringBuilder sb = new StringBuilder();
 for (char letter : letters) {
     sb.append(letter);
@@ -47,7 +47,7 @@ for (char letter : letters) {
 String word = sb.toString();
 
 // Iterate using while loop
-// numbers = [1, 1, 1, 1, 7, 0, 0, 0, 0, 0]
+// numbers = [1, 1, 1, 1, 7, 0, 0, 0]
 int i = 0;
 while (numbers[i] < 7) {
     numbers[i] = 1;
@@ -67,12 +67,12 @@ do {
 
 ## Big-O
 
-|    Operation    |    Time Complexity    |
-|:---------------:|:---------------------:|
-| Access by Index | O(1)                  |
-| Insertion S-M-E | O(n)-O(n)-O(1)        |
-| Deletion S-M-E  | O(n)-O(n)-O(1)        |
-| Linear Search   | O(n)                  |
-| Binary Search   | O(log n)              |
-| Sorting         | O(n^2) or O(n*log(n)) |
-| Resize          | O(n)                  |
+| Operation       | Time Complexity        |
+| --------------- | ---------------------- |
+| Access by Index | O(1)                   |
+| Insertion S-M-E | O(n)-O(n)-O(1)         |
+| Deletion S-M-E  | O(n)-O(n)-O(1)         |
+| Linear Search   | O(n)                   |
+| Binary Search   | O(log n)               |
+| Sorting         | O(n^2) or O(n\*log(n)) |
+| Resize          | O(n)                   |
