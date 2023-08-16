@@ -4,6 +4,7 @@
 
 - Java
   - [Basics](./language_foundations/java_basics.md)
+  - [Arrays](./language_foundations/java_arrays.md)
   - [OOP](./language_foundations/java_oop.md)
 - JavaScript
   - [Basics](./language_foundations/js_basics.md)
