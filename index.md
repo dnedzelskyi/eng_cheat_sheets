@@ -4,7 +4,7 @@
 
 - Java
   - [Basics](./language_foundations/java_basics.md)
-  - [Object-Oriented Programming (OOP)](./language_foundations/java_oop.md)
+  - [OOP](./language_foundations/java_oop.md)
 - JavaScript
   - [Basics](./language_foundations/js_basics.md)
   - Arrays
