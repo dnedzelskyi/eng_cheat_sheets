@@ -4,9 +4,9 @@
 
 ## Class Diagram.
 
-Lets take a look at the following example to revisit fundamental object-oriented programming (OOP) concepts.
+Lets take a look at the following example to revisit fundamental concepts of object-oriented programming (OOP).
 
-Geometric Shapes:
+**Geometric Shapes:**
 
 - **[ShapeColor](#enum)** - Enum for possible Shape colors.
 - **[Shape](#interface)** - Interface for all Shapes.
