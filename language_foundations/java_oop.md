@@ -305,11 +305,11 @@ import java.util.Map;
 public class ShapeFactory {
 
     // Map with argument list required for certain Shape Class constructor.
-    private static final Map<Class<? extends Shape>, Class<?>[]> CLASS_CONSTRUCTORS_ARGS_MAP = new HashMap<>() {{
+    private static final Map<Class<? extends Shape>, Class<?>[]> CLASS_CONSTRUCTORS_ARGS_MAP = new HashMap<>() { {
         put(Circle.class, new Class<?>[]{double.class, ShapeColor.class});
         put(Rhombus.class, new Class<?>[]{double.class, double.class, ShapeColor.class});
         put(Square.class, new Class<?>[]{double.class, ShapeColor.class});
-    }};
+    } };
 
     public static <T extends Shape> T create(Class<T> shapeClass, Object... args) {
         try {
