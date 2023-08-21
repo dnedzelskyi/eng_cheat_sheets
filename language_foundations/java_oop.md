@@ -46,9 +46,9 @@ package Shapes;
 public interface Shape {
     ShapeColor color = ShapeColor.NONE;
 
-    String getName();
-    double calculateArea();
-    double calculatePerimeter();
+    abstract String getName();
+    abstract double calculateArea();
+    abstract double calculatePerimeter();
 
     @Override
     String toString();
@@ -386,4 +386,35 @@ Area: 25.46.
 :: Details ::
 Edge: 6.0.
 Angle: 45.0.
+```
+
+## Type Casting
+
+```java
+Shape shape = new Square(5, ShapeColor.GREEN);
+
+// Check for Square and cast.
+if (shape instanceof Square) {
+    Square square = (Square) shape;
+    System.out.println("shape is a Square");
+}
+
+// Instance of Patter matching.
+// Check for Rhombus, cast, and assign instantly to rhombus variable.
+// rhombus will be available only inside if statement scope.
+if (shape instanceof Rhombus rhombus) {
+    System.out.println("shape is a Rhombus");
+    System.out.printf("rhombus name: %s%n", rhombus.getName());
+}
+
+// Check if it's not Circle.
+if (!(shape instanceof Circle)) {
+    System.out.println("shape is not a Circle");
+}
+
+// Output:
+// shape is a Square
+// shape is a Rhombus
+// rhombus name: Square
+// shape is not a Circle
 ```
