@@ -12,6 +12,7 @@
   - Arrays
 - Python
 - TypeScript
+  - [Strings](./language_foundations/ts_strings.md)
 
 **Data Structures**:
 
