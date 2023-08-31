@@ -1,7 +1,6 @@
 # Engineering Cheat Sheets
 
 **Language foundations:**
-
 - Java
   - [Basics](./language_foundations/java_basics.md)
   - [Arrays](./language_foundations/java_arrays.md)
@@ -15,7 +14,5 @@
   - [Strings](./language_foundations/ts_strings.md)
 
 **Data Structures**:
-
-- Array
-- Stack
+- [Code Templates](./data_structures/code_templates.md)
 - [Big-O](./data_structures/big_o.md)
