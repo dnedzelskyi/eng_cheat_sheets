@@ -1,4 +1,4 @@
-[Home](../index.md) > Data Structures > [Big-O](./code_templates.md)
+[Home](../index.md) > Data Structures > [Code Templates](./code_templates.md)
 
 # Data Structures | Code Templates
 
@@ -12,6 +12,7 @@
  * @param {T[]} list - List of vales.
  * @param {number} start - start index of sub-array.
  * @param {number} end - end index of sub-array.
+ *
  * @returns {number} partition index.
  */
 function partition<T>(pivot: T, list: T[], start: number, end: number): number {
@@ -53,6 +54,7 @@ Pivot index: 4
  * @param {T[]} list - list of vales.
  * @param {number} start - start index of sub- array.
  * @param {number} end - end index of sub-array.
+ *
  * @returns {number[]} Partition indexes for each conditions.
  */
 function partition<T>(

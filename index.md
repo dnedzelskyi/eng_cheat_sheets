@@ -8,7 +8,6 @@
   - [OOP](./language_foundations/java_oop.md)
 - JavaScript
   - [Basics](./language_foundations/js_basics.md)
-  - Arrays
 - Python
 - TypeScript
   - [Strings](./language_foundations/ts_strings.md)

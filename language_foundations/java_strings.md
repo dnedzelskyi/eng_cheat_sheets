@@ -1,4 +1,4 @@
-[Home](../index.md) > Java > [Arrays](./java_strings.md)
+[Home](../index.md) > Java > [Strings](./java_strings.md)
 
 # Java | Strings
 

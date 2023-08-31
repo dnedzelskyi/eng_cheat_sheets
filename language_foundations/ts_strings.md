@@ -2,12 +2,6 @@
 
 # TypeScrip | Strings
 
-## Basics
-
-```typescript
-
-```
-
 ## Other
 
 _Check if alphanumeric._
