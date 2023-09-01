@@ -4,7 +4,7 @@
 
 ## Lists and Arrays.
 
-| Name     | Access            | Search | Insert              | Delete               |
+| Name               | Access            | Search | Insert              | Delete               |
 | ------------------ | ----------------- | ------ | ------------------- | -------------------- |
 | Dynamic Array      | O(1) - by index   | O(n)   | O(n) - O(n) - O(1)  | O(n) - O(n) - O(1)   |
 | Linked List        | O(n)              | O(n)   | O(1) - O(n) - O(n)  | O(1) - O(n) - O(n)   |
@@ -13,8 +13,9 @@
 | Queue              | O(1) - only first | ...    | O(1) - enqueue back | O(1) - dequeue front |
 
 ## Min/Max Heap.
+
 | Operation          | Time Complexity | Space Complexity |
-|--------------------|-----------------|------------------|
+| ------------------ | --------------- | ---------------- |
 | Create             | O(N)            | O(N)             |
 | Insert element     | O(logN)         | O(1)             |
 | Get top element    | O(1)            | O(1)             |
