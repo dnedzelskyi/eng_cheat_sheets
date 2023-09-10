@@ -2,7 +2,7 @@
 
 ### Language foundations
 
-**Java**
+Java
 
 - [Basics](./language_foundations/java_basics.md)
 - [Arrays](./language_foundations/java_arrays.md)
@@ -10,13 +10,11 @@
 - [Sets](./language_foundations/java_sets.md)
 - [OOP](./language_foundations/java_oop.md)
 
-**JavaScript**
+JavaScript
 
 - [Basics](./language_foundations/js_basics.md)
 
-**Python**
-
-**TypeScript**
+TypeScript
 
 - [Strings](./language_foundations/ts_strings.md)
 
