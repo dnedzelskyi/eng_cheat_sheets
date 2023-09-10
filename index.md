@@ -8,6 +8,7 @@ Java
 - [Arrays](./language_foundations/java_arrays.md)
 - [Strings](./language_foundations/java_strings.md)
 - [Sets](./language_foundations/java_sets.md)
+- [Lists](./language_foundations/java_lists.md)
 - [OOP](./language_foundations/java_oop.md)
 
 JavaScript
