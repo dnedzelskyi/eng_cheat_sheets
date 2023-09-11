@@ -41,3 +41,8 @@ names.remove(2);
 names.indexOf("Eva");
 names.indexOf("John");
 ```
+
+## References
+- Wikipedia > [List (abstract data type)](https://en.wikipedia.org/wiki/List_(abstract_data_type))
+- Wikipedia > [Linked list](https://en.wikipedia.org/wiki/Linked_list)
+- Oracle. Java Docs > [java.util.List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
