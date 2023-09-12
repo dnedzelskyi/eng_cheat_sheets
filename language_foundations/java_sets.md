@@ -33,6 +33,25 @@ uniqueNumbers.contains(21);
 fruits.remove("lemon")
 ```
 
+## Iterate
+
+```java
+// Iterator.
+Iterator<String> iterator = set.iterator();
+while (iterator.hasNext()) {
+    String element = iterator.next();
+    System.out.println(element);
+}
+
+// for-each loop
+for (String element : set) {
+    System.out.println(element);
+}
+
+// Using Streams.
+set.stream().forEach(element -> System.out.println(element));
+```
+
 ## References
 
 - Wikipedia > [Set (Abstract Data Type)](<https://en.wikipedia.org/wiki/Set_(abstract_data_type)>)

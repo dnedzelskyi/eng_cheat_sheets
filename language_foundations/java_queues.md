@@ -35,6 +35,32 @@ messageQueue.remove("Call me.");
 messageQueue.clear();
 ```
 
+## Iterate
+
+```java
+// loop with poll()
+while (!queue.isEmpty()) {
+    String element = queue.poll();
+    System.out.println(element);
+}
+
+// for-each loop
+for (String element : queue) {
+    System.out.println(element);
+}
+
+// Temporary queue
+Queue<String> tempQueue = new LinkedList<>(queue);
+while (!tempQueue.isEmpty()) {
+    String element = tempQueue.poll();
+    System.out.println(element);
+}
+
+// Using streams.
+Stream<String> stream = queue.stream();
+stream.forEach(element -> System.out.println(element));
+```
+
 ## References
 
 - Wikipedia > [Queue (abstract data type)](<https://en.wikipedia.org/wiki/Queue_(abstract_data_type)>)

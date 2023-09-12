@@ -5,6 +5,7 @@
 **List** - represents an ordered, dynamically sized collection of elements, where each element can be accessed by an index. It can be of any data type, including objects or primitive data types. It can contain duplicate elements.
 
 ## Basics
+
 ```Java
 // Create. Out: []
 final List<String> names = new ArrayList<>();
@@ -42,7 +43,46 @@ names.indexOf("Eva");
 names.indexOf("John");
 ```
 
+## Iterate
+
+```java
+// Loop with an index.
+for (int i = 0; i < list.size(); i++) {
+    String element = list.get(i);
+    System.out.println(element);
+}
+
+// for-each loop
+for (String element : list) {
+    System.out.println(element);
+}
+
+// Iterator.
+Iterator<String> iterator = list.iterator();
+while (iterator.hasNext()) {
+    String element = iterator.next();
+    System.out.println(element);
+}
+
+// Using streams
+list.stream().forEach(element -> System.out.println(element));
+
+// ListIterator (allows to move forward and backward)
+ListIterator<String> iterator = list.listIterator();
+
+while (iterator.hasNext()) {
+    String element = iterator.next();
+    System.out.println(element);
+}
+
+while (iterator.hasPrevious()) {
+    String element = iterator.previous();
+    System.out.println(element);
+}
+```
+
 ## References
-- Wikipedia > [List (abstract data type)](https://en.wikipedia.org/wiki/List_(abstract_data_type))
+
+- Wikipedia > [List (abstract data type)](<https://en.wikipedia.org/wiki/List_(abstract_data_type)>)
 - Wikipedia > [Linked list](https://en.wikipedia.org/wiki/Linked_list)
 - Oracle. Java Docs > [java.util.List](https://docs.oracle.com/javase/8/docs/api/java/util/List.html)
