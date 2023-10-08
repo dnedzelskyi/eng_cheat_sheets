@@ -6,7 +6,7 @@
 
 List Containers / Images.
 
-```shell
+```text
 # List all Containers.
 docker ps -a
 
@@ -17,7 +17,7 @@ docker image ls
 
 Working with Images.
 
-```shell
+```text
 # Search for Image.
 docker search <image>
 docker search -f is-official=true <image>
@@ -36,7 +36,7 @@ docker image remove <image>
 
 Create Containers.
 
-```shell
+```text
 # Just create.
 docker create -it <image>
 
@@ -52,7 +52,7 @@ docker run -it --name <container> --rm <image>
 
 Start / Unpause Containers.
 
-```shell
+```text
 # Start in the background.
 docker start <container>
 docker restart <container>
@@ -66,7 +66,7 @@ docker unpause <container
 
 Stop / Pause / Restart Containers.
 
-```shell
+```text
 # Gracefully stop running Container.
 docker stop <container>
 
@@ -88,7 +88,7 @@ for /f "tokens=*" %i in ('docker ps -q') do docker stop %i
 
 Delete Containers.
 
-```shell
+```text
 # Remove Container that is not running.
 docker rm <container>
 docker remove <container>
@@ -99,7 +99,7 @@ docker remove -f <container>
 
 Attach Containers.
 
-```shell
+```text
 # Just attach.
 docker attach <container>
 
@@ -109,7 +109,7 @@ docker exec -it <container> bash
 
 Check where the hell are you at and what's going on.
 
-```shell
+```text
 # Info about OS (Linux, Unix ... etc.)
 cat /etc/issue
 
