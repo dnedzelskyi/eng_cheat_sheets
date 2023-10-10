@@ -47,7 +47,7 @@ docker run -it <image>
 docker run -itd <image>
 
 # Create with name, start, attach and remove after detachment.
-docker run -it --name <container> --rm <image>
+docker run -it --rm --name <container> <image>
 ```
 
 Start / Unpause Containers.
@@ -61,7 +61,7 @@ docker restart <container>
 docker start -ia <container>
 
 # Unpause Container.
-docker unpause <container
+docker unpause <container>
 ```
 
 Stop / Pause / Restart Containers.
@@ -110,6 +110,9 @@ docker exec -it <container> bash
 Check where the hell are you at and what's going on.
 
 ```text
+# Current user
+whoami
+
 # Info about OS (Linux, Unix ... etc.)
 cat /etc/issue
 
@@ -124,4 +127,40 @@ docker top <container>
 
 # View Container logs with time.
 docker logs -t <container>
+```
+
+## Docker File
+
+Docker file basics.
+
+```text
+FROM <image>
+
+USER <user>
+
+RUN <command>
+
+WORKDIR <path>
+
+COPY [--chown=<user>:<group>|--from=<stage>] <host/stage_path> <container_path>
+
+EXPOSE <ports>
+
+CMD ["cmd 1", "cmd 2", ...]
+```
+
+### Commands
+
+```text
+# Build Image from dockerfile.
+docker build -t <image> .
+
+# Runs new container with exposed port to host.
+docker run -dit -p <container_port>:<host_port> <image>
+
+# Runs new container with exposed port to host and removes it after stop.
+docker run -it -p <container_port>:<host_port> --name <container> --rm <image>
+
+# Runs new container and expose all ports (see EXPOSE in docker file).
+docker run -dit -P --name <container> <image>
 ```
