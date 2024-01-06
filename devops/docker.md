@@ -185,3 +185,47 @@ docker run -it -p <h_port>:<c_port> --mount type=bind,source=<h_path>,target=<c_
 # Runs container with mounted volume. Removes container after stop.
 docker run -it -p <h_port>:<c_port> --mount type=volume,src=<volume>,target=<c_path> --rm <image>
 ```
+
+## Networking
+
+```text
+# List networks
+docker network ls
+
+# Create new network
+docker network create --driver=bridge <network>
+
+# Run container with network
+docker run -d --network=<network> -p <h_port>:<c_port> --name=<container> --rm <image>
+```
+
+## Docker Compose
+
+Example of `docker-compose.yml` file.
+
+```yml
+version: <Docker Compose Ver (for ex. 3)>
+services:
+  <container #1>:
+    build: <dockerfile_path>
+    ports:
+      - "<h_port>:<c_port>"
+    volumes:
+      - <h_path>:<c_path>
+    links:
+      - <container #2>
+    environment:
+      - <env_var>
+  <container #2>:
+    image: <image>
+```
+
+Commands.
+
+```text
+// Build ans spins-up all container.
+docker-compose up --build
+
+// Will spin-up numerous amount of containers.
+docker-compose up --scale <container>=<count>
+```
