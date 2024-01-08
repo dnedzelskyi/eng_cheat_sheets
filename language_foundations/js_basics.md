@@ -13,7 +13,7 @@
 1. **`symbol`** for unique identifiers.
 1. **`object`** non-primitive data type for more complex data structures.
 
-## Declare variables.
+## Variables.
 
 ```javascript
 // Global scope variable.

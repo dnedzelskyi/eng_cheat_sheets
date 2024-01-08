@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots"
+    content="engineering cheat sheets, java, typescript, python, javascript, learning, short and concise code examples, basics, language foundations">
+
   <link rel="icon" type="image/x-icon"
     href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItYm9vayI+PHBhdGggZD0iTTQgMTkuNUEyLjUgMi41IDAgMCAxIDYuNSAxN0gyMCI+PC9wYXRoPjxwYXRoIGQ9Ik02LjUgMkgyMHYyMEg2LjVBMi41IDIuNSAwIDAgMSA0IDE5LjV2LTE1QTIuNSAyLjUgMCAwIDEgNi41IDJ6Ij48L3BhdGg+PC9zdmc+">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-  <!-- and it's easy to individually load additional languages -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/javascript.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/java.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/typescript.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/plaintext.min.js"></script>
-  <script>
-
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/java.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/typescript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/plaintext.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
   {% seo %}
   <style>
     * {
@@ -94,26 +94,30 @@
 
   </div>
   <button id="up-button" title="Go Up">&#8679; Up</button>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
     integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
   <script>
-    // Activate highlightjs
-    anchors.add();
-    hljs.highlightAll();
+    document.addEventListener("DOMContentLoaded", () => {
+      // Activate highlightjs
+      anchors.add();
+      hljs.highlightAll();
 
-    // Scroll page up.
-    const upButton = document.querySelector("#up-button");
-    document.addEventListener('scroll', (event) => {
-      const isVisible = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20;
-      upButton.style.display = isVisible ? "block" : "none";
+      // Scroll page up.
+      const upButton = document.querySelector("#up-button");
+      document.addEventListener('scroll', (event) => {
+        const isVisible = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20;
+        upButton.style.display = isVisible ? "block" : "none";
+      });
+      upButton.addEventListener('click', () => {
+        if (!document) {
+          return;
+        }
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+
     });
-    upButton.addEventListener('click', () => {
-      if (!document) {
-        return;
-      }
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }); 
   </script>
 </body>
 

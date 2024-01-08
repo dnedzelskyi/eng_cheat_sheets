@@ -14,6 +14,12 @@ Java
   - [Maps](./language_foundations/java_maps.md)
 - [OOP](./language_foundations/java_oop.md)
 
+Python
+
+- [Basics](./language_foundations/python_basics.md)
+- [Numbers](./language_foundations/python_numbers.md)
+- [Strings](./language_foundations/python_strings.md)
+
 JavaScript
 
 - [Basics](./language_foundations/js_basics.md)
