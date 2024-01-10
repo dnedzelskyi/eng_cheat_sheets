@@ -107,6 +107,8 @@ Pivot index: 2,5,7,10
 
 ## Heap methods.
 
+### Comparison function
+
 ```typescript
 /**
  * A function type representing a priority order comparison function.
@@ -121,7 +123,11 @@ type PriorityOrderFunction<T> = (
   firstNodeValue: T,
   secondNodeValue: T,
 ) => boolean;
+```
 
+### HeapifyDown
+
+```typescript
 /**
  * Push node down until it will be placed in the right position in the heap according to the priority order.
  *
@@ -167,7 +173,11 @@ function heapifyDown<T>(
     i = p;
   }
 }
+```
 
+### HeapifyUp
+
+```typescript
 /**
  * Push node up until it will be placed in the right position in the heap according to the priority order.
  *
@@ -196,7 +206,11 @@ function heapifyUp<T>(
     p = Math.floor((i - 1) / 2);
   }
 }
+```
 
+### Poll / Extract Top
+
+```typescript
 /**
  * Extracts top element from the heap.
  *
