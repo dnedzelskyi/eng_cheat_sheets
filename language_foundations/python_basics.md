@@ -21,8 +21,11 @@ source ./.venv/bin/activate
 # Deactivate virtual environment
 deactivate
 
+# Store installed packages into requirements.txt
+python -m pip freeze > requirements.txt
+
 # Install packages from requirements.txt
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ## Basic / Primitive Types
