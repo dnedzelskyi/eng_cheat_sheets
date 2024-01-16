@@ -5,20 +5,23 @@
 ## Setup virtual environment
 
 ```text
+# Install venv module
+python -m pip install virtualenv
+
 # Setup virtual env for new project
 cd <project_folder>
-python -m venv env
+python -m venv .venv
 
 # Activate virtual environment (Linux - like OS)
-source ./env/bin/activate
+source ./.venv/bin/activate
 
 # Activate virtual environment (Windows)
-.\env\Scripts\activate
+.\.venv\Scripts\activate
 
 # Deactivate virtual environment
 deactivate
 
-# Install packages
+# Install packages from requirements.txt
 pip install -r requirements.txt
 ```
 
