@@ -19,6 +19,8 @@ Python
 - [Basics](./language_foundations/python_basics.md)
 - [Numbers](./language_foundations/python_numbers.md)
 - [Strings](./language_foundations/python_strings.md)
+- Data Structures
+  - [Lists](./language_foundations/python_lists.md)
 
 JavaScript
 
