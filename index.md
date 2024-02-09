@@ -21,6 +21,7 @@ Python
 - [Strings](./language_foundations/python_strings.md)
 - Data Structures
   - [Lists](./language_foundations/python_lists.md)
+  - [Dictionaries](./language_foundations/python_dictionaries.md)
 
 JavaScript
 

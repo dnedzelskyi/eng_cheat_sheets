@@ -23,4 +23,11 @@ math.floor(2.6) # 2
 round(2.6) # 3
 round(2.3) # 2
 math.ceil(2.1) # 3
+
+# Max values and infinities
+import sys
+max_word_size = sys.maxsize
+positive_infinity = float("inf")
+negative_infinity = float("-inf")
+
 ```
