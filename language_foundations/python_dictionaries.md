@@ -89,3 +89,35 @@ category_products.clear()
 """
 
 ```
+
+## Methods and functions
+
+```python
+# Get items count.
+len({"duck": 5, "cat": 2}) # 2
+
+# Check if key exists.
+2030 in {1990: "Italy", 1998: "France", 2006: "Germany"} # False
+
+# Make shallow copy.
+tech_dict = {1: ['Angular', 'React'], 2: ["Spring", ".NET", "NodeJS"]}
+tech_dict_copy = tech_dict.copy()
+tech_dict[2].append("Django")
+print(tech_dict_copy)
+# {1: ['Angular', 'React'], 2: ['Spring', '.NET', 'NodeJS', 'Django']}
+
+# Create fromkeys
+dict.fromkeys([(0, 0), (0, 1), (1, 0), (1, 1)], 0)
+# {(0, 0): 0, (0, 1): 0, (1, 0): 0, (1, 1): 0}
+
+# View objects for keys, values and items. (changes to dict will be automatically reflected in views)
+colors = {"red": "#FF0000", "green": "#00FF00", "blue": "#0000FF"}
+colors.keys() # dict_keys(['red', 'green', 'blue'])
+colors.values() #dict_values(['#FF0000', '#00FF00', '#0000FF'])
+colors.items() # dict_items([('red', '#FF0000'), ('green', '#00FF00'), ('blue', '#0000FF')])
+
+# Convert to list of keys
+list(colors) # ['red', 'green', 'blue']
+list(colors.values()) # ['#FF0000', '#00FF00', '#0000FF']
+
+```
