@@ -55,6 +55,10 @@ git add -A
 git add <path to file | pattern>
 
 # Un-stage file(s)
+git reset
+git reset <path to file | pattern>
+
+# Remove tracking file(s)
 git rm --cached <path to file | pattern>
 
 # Commit staged changes
