@@ -55,8 +55,16 @@ git add -A
 git add <path to file | pattern>
 
 # Un-stage file(s)
-git reset
-git reset <path to file | pattern>
+git restore --staged .
+git restore --staged <path to file(s) | pattern>
+
+# Discard changes
+git restore .
+git restore <path to file(s) | pattern>
+
+# Restore
+git checkout <sha>
+git checkout <sha> -- <file path>
 
 # Remove tracking file(s)
 git rm --cached <path to file | pattern>
@@ -84,6 +92,11 @@ git log -<n_last_commits>
 git log --graph --decorate
 git log -p --graph --decorate --all
 git log -p --graph --decorate --all --oneline
+
+# Search in logs
+git log -S '<search_text>'
+git log -S '<search_text>' -- <folder_path|file_path>
+git log -S '<search_text>' --author='<author_name>'
 
 # View HEAD history.
 git reflog
@@ -192,3 +205,33 @@ git push -u <remote> <branch>
 > - _origin_ - for main upstream repo
 > - _upstream_ - for repo fork
 > - _descriptive name_ - in case of multiple remotes (github, gitlab ...)
+
+## Stashing
+
+**_Stash_** - stack of temporary changes.
+
+```text
+# Stash changes with message
+git stash -m "<message>"
+
+# View all stashes.
+git stash --list
+
+# View stash changes.
+git stash show --index <index>
+
+# Retrieve latest stash.
+git stash pop
+git stash pop --index <index>
+
+# Apply stash without deleting it from stash.
+git stash apply stash@{n}
+git stash apply --index <index>
+
+# Delete stashes
+git stash drop stash@{n}
+
+# Delete all
+git stash clear
+
+```
