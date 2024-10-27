@@ -69,6 +69,9 @@ git checkout <sha> -- <file path>
 # Remove tracking file(s)
 git rm --cached <path to file | pattern>
 
+# Remove untracked files
+git clean -f
+
 # Commit staged changes
 git commit -m '<meaningful commit message>'
 
@@ -101,6 +104,9 @@ git log -S '<search_text>' --author='<author_name>'
 # View HEAD history.
 git reflog
 
+# Show commits that caused conflicts
+git log --merge
+
 ```
 
 ## Branching
@@ -128,6 +134,9 @@ git branch -D <branch_name>
 ```text
 # Merge some source branch onto active branch
 git merge <source_branch>
+
+# Abort merge
+git merge --abort
 ```
 
 ## Rebase
@@ -135,6 +144,9 @@ git merge <source_branch>
 ```text
 # Rebase active branch on some target branch
 git rebase <target_branch>
+
+# Combine last n commits
+git rebase -i HEAD~n
 ```
 
 > ⚠️ Warning.
@@ -234,4 +246,34 @@ git stash drop stash@{n}
 # Delete all
 git stash clear
 
+```
+
+## Resolving conflicts
+
+```text
+# Highlight conflicts
+git diff --base
+
+# 4 - types of pull
+git pull --no-rebase
+
+git pull --rebase
+git rebase --continue
+
+git pull # = git fetch + git merge
+
+git pull --ff-only
+
+# Cancel merge
+git reset --merge
+
+# Continue merge after resolving all conflicts.
+git merge --continue
+
+# Take ours/thairs
+git checkout --ours <path>
+git checkout --theirs <path>
+
+# Show commits that caused conflicts
+git log --merge
 ```
