@@ -309,7 +309,7 @@ git log --merge
 
 ## Search using bisect
 
-```test
+```text
 # Start
 git bisect start
 
