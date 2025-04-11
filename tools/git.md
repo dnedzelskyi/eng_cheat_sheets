@@ -72,6 +72,15 @@ git rm --cached <path to file | pattern>
 # Remove untracked files
 git clean -f
 
+# Revert
+git revert <sha>
+
+# Reset
+# soft - move head and keeps changes
+# hard - move head and undo all changes
+git reset --soft <commit|HEAD~n>
+git reset --hard <commit|HEAD~n>
+
 # Commit staged changes
 git commit -m '<meaningful commit message>'
 
@@ -101,6 +110,13 @@ git log -S '<search_text>'
 git log -S '<search_text>' -- <folder_path|file_path>
 git log -S '<search_text>' --author='<author_name>'
 
+# Search commit by word in commit message
+git log --grep <word>
+git log --grep <word> -p
+
+# View commits and changes for specific file(s)/folder
+git log -p -- <file>
+
 # View HEAD history.
 git reflog
 
@@ -119,6 +135,10 @@ git branch --list
 # Create new branch
 git branch <branch_name>
 
+# Create new branch and push it upstream.
+git checkout -b <branch_name>
+git push -u origin <branch_name>
+
 # Switch branch
 git checkout <branch_name>
 
@@ -127,6 +147,10 @@ git checkout -b <branch_name>
 
 # Delete branch
 git branch -D <branch_name>
+
+# Delete branch and delete it from upstream.
+git branch -D <branch_name>
+git push origin --delete <branch_name>
 ```
 
 ## Merging
@@ -145,8 +169,12 @@ git merge --abort
 # Rebase active branch on some target branch
 git rebase <target_branch>
 
-# Combine last n commits
+# Interactive rebase. Edit commits.
 git rebase -i HEAD~n
+git rebase -i <base_commit_sha>
+
+# Proceed rebase
+git rebase --continue
 ```
 
 > ⚠️ Warning.
@@ -227,7 +255,7 @@ git push -u <remote> <branch>
 git stash -m "<message>"
 
 # View all stashes.
-git stash --list
+git stash list
 
 # View stash changes.
 git stash show --index <index>
@@ -260,7 +288,8 @@ git pull --no-rebase
 git pull --rebase
 git rebase --continue
 
-git pull # = git fetch + git merge
+# git fetch + git merge
+git pull
 
 git pull --ff-only
 
@@ -276,4 +305,21 @@ git checkout --theirs <path>
 
 # Show commits that caused conflicts
 git log --merge
+```
+
+## Search using bisect
+
+```test
+# Start
+git bisect start
+
+# Search
+git bisect bad
+git bisect good <sha>
+
+git bisect good/bad
+git bisect run <script>
+
+# Reset search
+git bisect reset
 ```
